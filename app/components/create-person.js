@@ -10,6 +10,14 @@ export default Ember.Component.extend({
           data: JSON.stringify(this.getProperties('first', 'last', 'address', 'phone')),
           contentType: 'application/json',
         });
+
+        this.setProperties({
+          //pass in an object
+          first: '',
+          last: '',
+          address: '',
+          phone: '',
+        });
     }
   }
 });
